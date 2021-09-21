@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+.portfolio-title,
+.skill-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: underline;
+}
+/* home section */
+.home-container-desc {
+  flex: 1;
+}
+.home-container-img {
+  flex: 1;
+}
+.home-container-img img {
+  width: 70%;
+  margin: 0 auto;
+}
+/* End of home section */
+
+/* Portfolio section */
+.portfolio-section {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.filter-button {
+  font-size: 18px;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+}
+.filter-button:hover {
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: black;
+}
+.btn-default:active .filter-button:active {
+  background-color: black;
+  color: white;
+}
+
+.port-image {
+  width: 100%;
+}
+.portfolio-row {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.portfolio_item {
+  height: 350px;
+  margin-bottom: 30px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 30%;
+  background: white;
+}
+
+.portfolio_item h5 {
+  font-size: 20px;
+}
+.portfolio_item p {
+  font-size: 14px;
+}
+.portfolio_item:hover {
+  transform: scale(1.1);
+}
+.portfolio_item:hover {
+  -webkit-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+  -moz-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+  box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+}
+.portfolio-item-img {
+  height: 70%;
+  background: white;
+}
+.portfolio-item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End of Portfolio section */
+
+/* skill section */
+.skill-section {
+  background: white;
+  padding: 30px 0;
+}
+.skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-container-info {
+  flex: 1;
+}
+.skill-container-info p {
+  width: 60%;
+}
+.skill-container-bar {
+  flex: 1;
+}
+.progress {
+  height: 30px;
+}
+.progress-bar {
+  height: 30px;
+}
+/* End of skill section */
+
+@media (min-width: 768px) {
+  .portfolio_item {
+    width: 45%;
+  }
+  .portfolio_item h5 {
+    font-size: 18px;
+  }
+  .portfolio_item p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .home-container-img {
+    margin-top: 20px;
+  }
+  .skill-container {
+    flex-direction: column;
+  }
+  .skill-container-info {
+    flex: 1;
+    width: 100%;
+  }
+  .skill-container-info p {
+    width: 100%;
+  }
+  .skill-container-bar {
+    flex: 1;
+    width: 100%;
+  }
+  .portfolio_item {
+    width: 90%;
+  }
+  .portfolio_item h5 {
+    font-size: 18px;
+  }
+  .portfolio_item p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio_item {
+    width: 30%;
+  }
+
+  .portfolio_item h5 {
+    font-size: 20px;
+  }
+  .portfolio_item p {
+    font-size: 14px;
+  }
+}
