@@ -1,185 +1,202 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body::before {
-    display: block;
-    content: "";
-    height: 60px;
+  display: block;
+  content: "";
+  height: 60px;
 }
 .portfolio-title,
 .skill-title,
 .service-title,
 .price-title,
-.faq-title {
-    font-size: 36px;
-    text-align: center;
-    font-weight: 600;
-    text-decoration: underline;
+.faq-title,
+.contact-title {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: underline;
 }
 /* home section */
 .home-section {
-    padding: 80px 0 30px;
+  padding: 80px 0 60px;
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .home-container-desc {
-    flex: 1;
+  flex: 1;
+}
+.home-container-desc > h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+.home-container-desc h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.home-container-desc p {
+  font-size: 15px;
 }
 .home-container-img {
-    flex: 1;
+  flex: 1;
 }
 .home-container-img img {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 /* End of home section */
 
 /* Portfolio section */
 .portfolio-section {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 70px 0 30px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 70px 0 60px;
 }
 
 .filter-button {
-    font-size: 18px;
-    border: 2px solid black;
-    text-align: center;
-    color: black;
-    margin-bottom: 30px;
+  font-size: 18px;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
 }
 .filter-button:hover {
-    font-size: 18px;
-    border: 2px solid black;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-    background-color: black;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: black;
 }
 .btn-default:active .filter-button:active {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .port-image {
-    width: 100%;
+  width: 100%;
 }
 .portfolio-row {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
 .portfolio_item {
-    height: 350px;
-    margin-bottom: 30px;
-    border: 1px solid lightgray;
-    padding: 10px;
-    width: 30%;
-    background: white;
+  height: 350px;
+  margin-bottom: 30px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 30%;
+  background: white;
 }
 
 .portfolio_item h5 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .portfolio_item p {
-    font-size: 14px;
+  font-size: 14px;
 }
 .portfolio_item:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .portfolio_item:hover {
-    -webkit-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
-    -moz-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
-    box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+  -webkit-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+  -moz-box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
+  box-shadow: 0px -2px 26px 8px rgba(117, 115, 117, 1);
 }
 .portfolio-item-img {
-    height: 70%;
-    background: white;
+  height: 70%;
+  background: white;
 }
 .portfolio-item-img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* End of Portfolio section */
 
 /* skill section */
 .skill-section {
-    background: white;
-    padding: 70px 0 30px;
+  background: white;
+  padding: 70px 0 60px;
 }
 .skill-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .skill-container-info {
-    flex: 1;
+  flex: 1;
 }
 .skill-container-info p {
-    width: 60%;
+  width: 70%;
 }
 .skill-container-bar {
-    flex: 1;
+  flex: 1;
 }
 .progress {
-    height: 30px;
+  height: 30px;
 }
 .progress-bar {
-    height: 30px;
+  height: 30px;
 }
 /* End of skill section */
 
 /* Service section */
 .service-section {
-    background: #dee1e6;
-    padding: 70px 0 30px;
+  background: #dee1e6;
+  padding: 70px 0 60px;
 }
 
 .section-header p {
-    text-align: center;
-    margin: auto;
-    font-size: 15px;
-    padding-bottom: 60px;
-    color: #535074;
-    width: 50%;
+  text-align: center;
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #535074;
+  width: 50%;
 }
 
 #services {
-    padding: 40px 0 40px 0;
+  padding: 40px 0 40px 0;
 }
 
 #services .box {
-    padding: 30px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 10px 40px 10px;
-    background: #fff;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    transition: all 0.3s ease-in-out;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #services .box:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 #services .icon {
-    text-align: center;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 /* #services .icon .service-icon {
@@ -188,90 +205,89 @@ body::before {
 } */
 
 #services .title {
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-size: 18px;
-    margin: 10px 0;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  margin: 10px 0;
 }
 .icon i {
-    position: absolute;
-    left: 15px;
-    top: -8px;
-    font-size: 50px;
+  position: absolute;
+  left: 15px;
+  top: -8px;
+  font-size: 50px;
 }
 #services .title a {
-    color: #111;
+  color: #111;
 }
 
 #services .box:hover .title a {
-    color: #c59c35;
+  color: #c59c35;
 }
 #services .box:hover .title a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 #services .description {
-    font-size: 14px;
-    /* line-height: 28px; */
-    margin-bottom: 0;
-    text-align: left;
+  font-size: 14px;
+  /* line-height: 28px; */
+  margin-bottom: 0;
+  text-align: left;
 }
 /* End of service section */
 
 /* Price section */
 .price-section {
-    padding: 70px 0 30px;
-    color: black !important;
+  padding: 70px 0 60px;
+  color: black !important;
 }
 .price-title {
-    color: white !important;
+  color: white !important;
 }
 /* End of price section */
 
 /* Price section */
 h1.demo-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 2px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 2px;
 }
 
 h1.demo-title a {
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .pricing-table {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    background: #ffffff;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .pricing-table .pricetable-item {
-    width: 33.33%;
-    padding: 0 15px;
-    margin-bottom: 30px;
+  width: 33.33%;
+  padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .pricing-table .pricetable-single {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .pricing-table .pricetable-header,
 .pricing-table .pricetable-body,
 .pricing-table .pricetable-footer {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
 }
 
 .pricing-table .pricetable-status,
@@ -279,249 +295,374 @@ h1.demo-title a {
 .pricing-table .pricetable-price,
 .pricing-table .pricetable-description,
 .pricing-table .pricetable-action {
-    position: relative;
-    width: 100%;
-    text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .pricing-table .pricetable-single {
-    background: #f6f8fa;
-    border: 1px solid lightgray;
+  background: #f6f8fa;
+  border: 1px solid lightgray;
 }
 
 .pricing-table .pricetable-single:hover {
-    box-shadow: 0 10px 40px #999999;
+  box-shadow: 0 10px 40px #999999;
 }
 
 .pricing-table .pricetable-header {
-    margin: 0 30px;
-    padding: 60px 0 45px 0;
-    width: auto;
-    background: #198754;
+  margin: 0 30px;
+  padding: 60px 0 45px 0;
+  width: auto;
+  background: #198754;
 }
 
 .pricing-table .pricetable-header::before,
 .pricing-table .pricetable-header::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #f6f8fa;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #f6f8fa;
 }
 
 .pricing-table .pricetable-header::before {
-    right: 50%;
-    border-right: 250px solid transparent;
+  right: 50%;
+  border-right: 250px solid transparent;
 }
 
 .pricing-table .pricetable-header::after {
-    left: 50%;
-    border-left: 250px solid transparent;
+  left: 50%;
+  border-left: 250px solid transparent;
 }
 
 .pricing-table .pricetable-item.featured-item .pricetable-header {
-    background: #0d6efd;
+  background: #0d6efd;
 }
 
 .pricing-table .pricetable-status {
-    margin-top: -30px;
+  margin-top: -30px;
 }
 
 .pricing-table .pricetable-status span {
-    position: relative;
-    display: inline-block;
-    width: 70px;
-    height: 40px;
-    padding: 5px 0;
-    text-align: center;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    background: white;
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: white;
 }
 
 .pricing-table .pricetable-status span::before,
 .pricing-table .pricetable-status span::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 10px solid #0d6efd;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #0d6efd;
 }
 
 .pricing-table .pricetable-status span::before {
-    right: 50%;
-    border-right: 35px solid transparent;
+  right: 50%;
+  border-right: 35px solid transparent;
 }
 
 .pricing-table .pricetable-status span::after {
-    left: 50%;
-    border-left: 35px solid transparent;
+  left: 50%;
+  border-left: 35px solid transparent;
 }
 
 .pricing-table .pricetable-title h2 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 300;
-    letter-spacing: 2px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .pricing-table .pricetable-price h2 {
-    margin: 0;
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 700;
-    margin-left: 15px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-left: 15px;
 }
 
 .pricing-table .pricetable-price h2 small {
-    position: absolute;
-    font-size: 18px;
-    font-weight: 300;
-    margin-top: 16px;
-    margin-left: -15px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-left: -15px;
 }
 
 .pricing-table .pricetable-price h2 span {
-    margin-left: 3px;
-    font-size: 16px;
-    font-weight: 300;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .pricing-table .pricetable-body {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .pricing-table .pricetable-description ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .pricing-table .pricetable-description ul li {
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    padding: 7px;
-    border-bottom: 1px solid #dedede;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 7px;
+  border-bottom: 1px solid #dedede;
 }
 
 .pricing-table .pricetable-description ul li:last-child {
-    border: none;
+  border: none;
 }
 
 .pricing-table .pricetable-footer {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .pricing-table .pricetable-action a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-decoration: none;
-    background: #198754;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #198754;
 }
 
 .pricing-table .pricetable-action a:hover {
-    color: white;
-    background: #0d6efd;
+  color: white;
+  background: #0d6efd;
 }
 
 .pricing-table .pricetable-item.featured-item .pricetable-action a {
-    color: white;
-    background: #0d6efd;
+  color: white;
+  background: #0d6efd;
 }
 
 .pricing-table .pricetable-item.featured-item .pricetable-action a:hover {
-    color: white;
-    background: #198754;
+  color: white;
+  background: #198754;
 }
 /* End of price Section */
 
 /* FAQ section */
 
 .faq-section {
-    background: white;
-    padding: 70px 0 30px;
+  background: white;
+  padding: 70px 0 60px;
 }
 .accordion-item {
-    border: 1px solid gray !important;
-    margin: 5px 0;
+  border: 1px solid gray !important;
+  margin: 5px 0;
 }
 
 /* End of FAQ section */
 
+/* Footer section */
+.footer-section {
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 2px solid white;
+}
+/* End of Footer section */
+
+/* Typing effect */
+.typewriter p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  overflow: hidden;
+}
+.typewriter p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.typewriter p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.typewriter p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+/* End of typing effect */
+
+/* Contact section */
+.contact-section {
+  padding: 50px 0 60px;
+}
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid white !important;
+  height: 54px !important;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px !important;
+}
+#message {
+  height: 130px !important;
+}
+.form-group {
+  margin: 20px 0;
+}
+/* End of contact section */
+
 /* media query for mobile responsive */
 @media (min-width: 768px) {
-    .portfolio_item {
-        width: 45%;
-    }
-    .portfolio_item h5 {
-        font-size: 18px;
-    }
-    .portfolio_item p {
-        font-size: 13px;
-    }
-    .pricing-table .pricetable-item {
-        width: 45%;
-    }
+  .portfolio_item {
+    width: 45%;
+  }
+  .home-container {
+    flex-direction: column;
+  }
+  .home-container-desc {
+    text-align: center;
+  }
+  .home-container-img {
+    padding-top: 20px;
+  }
+  .typewriter p {
+    text-align: center;
+  }
+  .portfolio_item h5 {
+    font-size: 18px;
+  }
+  .portfolio_item p {
+    font-size: 13px;
+  }
+  .pricing-table .pricetable-item {
+    width: 45%;
+  }
 }
 @media (max-width: 767px) {
-    .home-container {
-        flex-direction: column;
-    }
-    .home-container-img {
-        margin-top: 20px;
-    }
-    .skill-container {
-        flex-direction: column;
-    }
-    .skill-container-info {
-        flex: 1;
-        width: 100%;
-    }
-    .skill-container-info p {
-        width: 100%;
-    }
-    .skill-container-bar {
-        flex: 1;
-        width: 100%;
-    }
-    .portfolio_item {
-        width: 90%;
-    }
-    .portfolio_item h5 {
-        font-size: 18px;
-    }
-    .portfolio_item p {
-        font-size: 13px;
-    }
-    .section-header p {
-        width: 100%;
-    }
-    .pricing-table .pricetable-item {
-        width: 100%;
-    }
+  .home-container {
+    flex-direction: column;
+  }
+  .home-container-img {
+    margin-top: 20px;
+  }
+  .typewriter p {
+    text-align: center;
+  }
+  .skill-container {
+    flex-direction: column;
+  }
+  .home-container-desc h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .home-container-desc h2 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .home-container-desc p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .skill-container-info {
+    flex: 1;
+    width: 100%;
+  }
+  .skill-container-info p {
+    width: 100%;
+  }
+  .skill-container-bar {
+    flex: 1;
+    width: 100%;
+  }
+  .portfolio_item {
+    width: 90%;
+  }
+  .portfolio_item h5 {
+    font-size: 18px;
+  }
+  .portfolio_item p {
+    font-size: 13px;
+  }
+  .section-header p {
+    width: 100%;
+  }
+  .pricing-table .pricetable-item {
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
-    .portfolio_item {
-        width: 30%;
-    }
+  .portfolio_item {
+    width: 30%;
+  }
+  p {
+    font-size: 17px !important;
+  }
 
-    .portfolio_item h5 {
-        font-size: 20px;
-    }
-    .portfolio_item p {
-        font-size: 14px;
-    }
-    .pricing-table .pricetable-item {
-        width: 33%;
-    }
+  .home-container {
+    flex-direction: row;
+  }
+  .home-container-desc {
+    flex: 1;
+    width: 50%;
+    text-align: left;
+  }
+  .home-container-img {
+    flex: 1;
+    width: 50%;
+    padding-top: 0;
+  }
+  .typewriter p {
+    text-align: left;
+  }
+  .portfolio_item h5 {
+    font-size: 20px;
+  }
+  .portfolio_item p {
+    font-size: 14px;
+  }
+  .pricing-table .pricetable-item {
+    width: 33%;
+  }
 }
