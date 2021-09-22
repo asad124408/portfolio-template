@@ -1,345 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <!-- Header Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Portfolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item px-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">Skills</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">Service</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">Price</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
-          <form class="d-flex ms-5">
-            <button class="btn btn-outline-light px-5 rounded-0" type="submit">
-              Contact
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- End of Header Section -->
-    <!-- Home Section -->
-    <div class="home-section bg-dark text-light p-5 text-center text-md-start">
-      <div class="container">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <!-- Header Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfolio</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="#home"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#price">Price</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-5">
+                        <button
+                            class="btn btn-outline-light px-5 rounded-0"
+                            type="submit"
+                        >
+                            Contact
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Header Section -->
+        <!-- Home Section -->
         <div
-          class="
-            d-flex d-sm-flex
-            align-items-center
-            justify-content-between
-            home-container
-          "
+            id="home"
+            class="home-section bg-dark text-light text-center text-md-start"
         >
-          <div class="me-4 home-container-desc">
-            <h1>
-              Hello, I am <span class="text-warning">Asadullah Sarker</span>
-            </h1>
-            <h4>professional web developer and programmer</h4>
-            <p class="lead my-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Laboriosam quos mollitia a aliquam similique illum dolorum,
-              incidunt quaerat error molestias distinctio obcaecati itaque sit
-              dolorem, autem repellat sapiente unde nihil.
-            </p>
-            <button class="btn btn-primary btn-md rounded-0">
-              Download CV
-            </button>
-          </div>
-          <div class="home-container-img">
-            <img
-              src="assets/img/me.jpg"
-              alt="myphoto"
-              class="img-fluid d-none d-sm-block"
-            />
-          </div>
+            <div class="container">
+                <div
+                    class="
+                        d-flex d-sm-flex
+                        align-items-center
+                        justify-content-between
+                        home-container
+                    "
+                >
+                    <div class="me-4 home-container-desc">
+                        <h1>
+                            Hello, I am
+                            <span class="text-warning">Asadullah Sarker</span>
+                        </h1>
+                        <h4>professional web developer and programmer</h4>
+                        <p class="lead my-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Laboriosam quos mollitia a aliquam similique
+                            illum dolorum, incidunt quaerat error molestias
+                            distinctio obcaecati itaque sit dolorem, autem
+                            repellat sapiente unde nihil.
+                        </p>
+                        <button class="btn btn-primary btn-md rounded-0">
+                            Download CV
+                        </button>
+                    </div>
+                    <div class="home-container-img">
+                        <img
+                            src="assets/img/me.jpg"
+                            alt="myphoto"
+                            class="img-fluid d-none d-sm-block"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- End of Home Section -->
-    <!-- Portfolio Section -->
-    <div class="portfolio-section">
-      <div class="container pt-3">
-        <div class="row">
-          <div class="portfolio col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="portfolio-title py-3">PORTFOLIO</h1>
-          </div>
-          <div align="center">
-            <button
-              class="btn btn-outline-primary filter-button rounded-0"
-              data-filter="all"
-            >
-              ALL
-            </button>
-            <button
-              class="btn btn-outline-primary filter-button rounded-0"
-              data-filter="html"
-            >
-              HTML
-            </button>
-            <button
-              class="btn btn-outline-primary filter-button rounded-0"
-              data-filter="wordpress"
-            >
-              WORDPRESS
-            </button>
-            <button
-              class="btn btn-outline-primary filter-button rounded-0"
-              data-filter="react"
-            >
-              REACT
-            </button>
-          </div>
-          <br />
+        <!-- End of Home Section -->
+        <!-- Portfolio Section -->
+        <div id="portfolio" class="portfolio-section">
+            <div class="container pt-3">
+                <div class="row">
+                    <div
+                        class="
+                            portfolio
+                            col-lg-12 col-md-12 col-sm-12 col-xs-12
+                        "
+                    >
+                        <h1 class="portfolio-title py-3">PORTFOLIO</h1>
+                    </div>
+                    <div align="center">
+                        <button
+                            class="
+                                btn btn-outline-primary
+                                filter-button
+                                rounded-0
+                            "
+                            data-filter="all"
+                        >
+                            ALL
+                        </button>
+                        <button
+                            class="
+                                btn btn-outline-primary
+                                filter-button
+                                rounded-0
+                            "
+                            data-filter="html"
+                        >
+                            HTML
+                        </button>
+                        <button
+                            class="
+                                btn btn-outline-primary
+                                filter-button
+                                rounded-0
+                            "
+                            data-filter="wordpress"
+                        >
+                            WORDPRESS
+                        </button>
+                        <button
+                            class="
+                                btn btn-outline-primary
+                                filter-button
+                                rounded-0
+                            "
+                            data-filter="react"
+                        >
+                            REACT
+                        </button>
+                    </div>
+                    <br />
+                </div>
+                <div class="row row-cols-2 row-cols-lg-3 portfolio-row">
+                    <div class="portfolio_item filter html">
+                        <div class="portfolio-item-img">
+                            <img src="assets/img/html.png" class="" />
+                        </div>
+                        <h5 class="pt-1 text-start">
+                            Responsive site with HTML
+                        </h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter react">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/react.png"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">SPA With React</h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter react">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/react1.jpg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">React-Redux Application</h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter wordpress">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/wordpress.jpg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">
+                            Professional site with Wordpress
+                        </h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter wordpress">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/wordpress2.png"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">Wordpress project</h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter html">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/html.png"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">
+                            Responsive site with HTML/CSS
+                        </h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter react">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/react1.jpg"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">React JS project</h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="portfolio_item filter html">
+                        <div class="portfolio-item-img">
+                            <img
+                                src="assets/img/html.png"
+                                class="img-fluid w-100"
+                            />
+                        </div>
+                        <h5 class="pt-1 text-start">
+                            Responsive site with HTML
+                        </h5>
+                        <p class="text-start">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row row-cols-2 row-cols-lg-3 portfolio-row">
-          <div class="portfolio_item filter html">
-            <div class="portfolio-item-img">
-              <img src="assets/img/html.png" class="" />
-            </div>
-            <h5 class="py-2 text-start">Responsive site with HTML</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter react">
-            <div class="portfolio-item-img">
-              <img src="assets/img/react.png" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">SPA With React</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter react">
-            <div class="portfolio-item-img">
-              <img src="assets/img/react1.jpg" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">React-Redux Application</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter wordpress">
-            <div class="portfolio-item-img">
-              <img src="assets/img/wordpress.jpg" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">Professional site with Wordpress</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter wordpress">
-            <div class="portfolio-item-img">
-              <img src="assets/img/wordpress2.png" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">Wordpress project</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter html">
-            <div class="portfolio-item-img">
-              <img src="assets/img/html.png" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">Responsive site with HTML/CSS</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter react">
-            <div class="portfolio-item-img">
-              <img src="assets/img/react1.jpg" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">React JS project</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div class="portfolio_item filter html">
-            <div class="portfolio-item-img">
-              <img src="assets/img/html.png" class="img-fluid w-100" />
-            </div>
-            <h5 class="py-2 text-start">Responsive site with HTML</h5>
-            <p class="text-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End of Portfolio Section -->
+        <!--End of Portfolio Section -->
 
-    <!-- Skil section -->
-    <div class="skill-section">
-      <div class="container">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 class="skill-title py-3">SKILL</h1>
+        <!-- Skil section -->
+        <div id="skill" class="skill-section">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="skill-title py-3">SKILL</h1>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-container-info">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Facilis nam ea corrupti, vitae molestiae
+                            eveniet consectetur? Deleniti quidem quisquam
+                            impedit officia architecto, quos neque alias
+                            accusamus laudantium sed eos consectetur.
+                        </p>
+                    </div>
+                    <div class="skill-container-bar">
+                        <div class="progress my-4">
+                            <div
+                                class="
+                                    progress-bar progress-bar-striped
+                                    bg-info
+                                    text-dark
+                                    fw-bold
+                                "
+                                role="progressbar"
+                                style="width: 100%"
+                                aria-valuenow="100"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                HTML(100%)
+                            </div>
+                        </div>
+                        <div class="progress my-4">
+                            <div
+                                class="
+                                    progress-bar progress-bar-striped
+                                    bg-info
+                                    text-dark
+                                    fw-bold
+                                "
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="85"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                REACT(85%)
+                            </div>
+                        </div>
+                        <div class="progress my-4">
+                            <div
+                                class="
+                                    progress-bar progress-bar-striped
+                                    bg-info
+                                    text-dark
+                                    fw-bold
+                                "
+                                role="progressbar"
+                                style="width: 80%"
+                                aria-valuenow="80"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                WORDPRESS(80%)
+                            </div>
+                        </div>
+                        <div class="progress my-4">
+                            <div
+                                class="
+                                    progress-bar progress-bar-striped
+                                    bg-info
+                                    text-dark
+                                    fw-bold
+                                "
+                                role="progressbar"
+                                style="width: 75%"
+                                aria-valuenow="75"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                JS(75%)
+                            </div>
+                        </div>
+                        <div class="progress my-4">
+                            <div
+                                class="
+                                    progress-bar progress-bar-striped
+                                    bg-info
+                                    text-dark
+                                    fw-bold
+                                "
+                                role="progressbar"
+                                style="width: 85%"
+                                aria-valuenow="85"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                ANGULAR(85%)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skill-container">
-          <div class="skill-container-info">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-              nam ea corrupti, vitae molestiae eveniet consectetur? Deleniti
-              quidem quisquam impedit officia architecto, quos neque alias
-              accusamus laudantium sed eos consectetur.
-            </p>
-          </div>
-          <div class="skill-container-bar">
-            <div class="progress my-4">
-              <div
-                class="
-                  progress-bar progress-bar-striped
-                  bg-info
-                  text-dark
-                  fw-bold
-                "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                HTML(100%)
-              </div>
-            </div>
-            <div class="progress my-4">
-              <div
-                class="
-                  progress-bar progress-bar-striped
-                  bg-info
-                  text-dark
-                  fw-bold
-                "
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                REACT(85%)
-              </div>
-            </div>
-            <div class="progress my-4">
-              <div
-                class="
-                  progress-bar progress-bar-striped
-                  bg-info
-                  text-dark
-                  fw-bold
-                "
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="80"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                WORDPRESS(80%)
-              </div>
-            </div>
-            <div class="progress my-4">
-              <div
-                class="
-                  progress-bar progress-bar-striped
-                  bg-info
-                  text-dark
-                  fw-bold
-                "
-                role="progressbar"
-                style="width: 75%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                JS(75%)
-              </div>
-            </div>
-            <div class="progress my-4">
-              <div
-                class="
-                  progress-bar progress-bar-striped
-                  bg-info
-                  text-dark
-                  fw-bold
-                "
-                role="progressbar"
-                style="width: 85%"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              >
-                ANGULAR(85%)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of Skill Section -->
+        <!-- End of Skill Section -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/index.js"></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+        <!-- Service section -->
+        <div id="service" class="service-section">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="service-title py-3">Services</h1>
+                </div>
+                <section class="services section-bg" id="services">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box">
+                                <div class="icon" style="background: #000">
+                                    <i
+                                        class="bi bi-laptop"
+                                        style="color: #c59c35"
+                                    ></i>
+                                </div>
+
+                                <h4 class="title">
+                                    <a href="">Web Development</a>
+                                </h4>
+
+                                <p class="description">
+                                    Laudem latine persequeris id sed, ex fabulas
+                                    delectus quo. No vel partiendo abhorreant
+                                    vituperatoribus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box">
+                                <div class="icon" style="background: #000">
+                                    <i
+                                        class="bi bi-camera-reels"
+                                        style="color: #c59c35"
+                                    ></i>
+                                </div>
+
+                                <h4 class="title">
+                                    <a href="">Video Editing</a>
+                                </h4>
+
+                                <p class="description">
+                                    Laudem latine persequeris id sed, ex fabulas
+                                    delectus quo. No vel partiendo abhorreant
+                                    vituperatoribus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box">
+                                <div class="icon" style="background: #000">
+                                    <i
+                                        class="bi bi-vector-pen"
+                                        style="color: #c59c35"
+                                    ></i>
+                                </div>
+
+                                <h4 class="title">
+                                    <a href="">Graphics Design</a>
+                                </h4>
+
+                                <p class="description">
+                                    Laudem latine persequeris id sed, ex fabulas
+                                    delectus quo. No vel partiendo abhorreant
+                                    vituperatoribus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- End of Service section -->
+
+        <!-- Price section -->
+        <div id="price" class="price-section bg-dark text-light">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="price-title py-3">Price</h1>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="pricetable-item">
+                        <div class="pricetable-single">
+                            <div class="pricetable-header">
+                                <div class="pricetable-title">
+                                    <h2>Basic</h2>
+                                </div>
+                                <div class="pricetable-price">
+                                    <h2><small>$</small>99<span>/ M</span></h2>
+                                </div>
+                            </div>
+                            <div class="pricetable-body">
+                                <div class="pricetable-description">
+                                    <ul>
+                                        <li>HTML5/CSS3</li>
+                                        <li>Fully Responsive Design</li>
+                                        <li>Neat and Clean Code</li>
+                                        <li>Easy to Customize</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricetable-footer">
+                                <div class="pricetable-action">
+                                    <a href="">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricetable-item featured-item">
+                        <div class="pricetable-single">
+                            <div class="pricetable-header">
+                                <div class="pricetable-status">
+                                    <span>popular</span>
+                                </div>
+                                <div class="pricetable-title">
+                                    <h2>Intermediate</h2>
+                                </div>
+                                <div class="pricetable-price">
+                                    <h2><small>$</small>199<span>/ M</span></h2>
+                                </div>
+                            </div>
+                            <div class="pricetable-body">
+                                <div class="pricetable-description">
+                                    <ul>
+                                        <li>HTML5/CSS3</li>
+                                        <li>Fully Responsive Design</li>
+                                        <li>Neat and Clean Code</li>
+                                        <li>Easy to Customize</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricetable-footer">
+                                <div class="pricetable-action">
+                                    <a href="">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricetable-item">
+                        <div class="pricetable-single">
+                            <div class="pricetable-header">
+                                <div class="pricetable-title">
+                                    <h2>Advance</h2>
+                                </div>
+                                <div class="pricetable-price">
+                                    <h2><small>$</small>299<span>/ M</span></h2>
+                                </div>
+                            </div>
+                            <div class="pricetable-body">
+                                <div class="pricetable-description">
+                                    <ul>
+                                        <li>HTML5/CSS3</li>
+                                        <li>Fully Responsive Design</li>
+                                        <li>Neat and Clean Code</li>
+                                        <li>Easy to Customize</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricetable-footer">
+                                <div class="pricetable-action">
+                                    <a href="">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of price Section -->
+
+        <!-- FAQ section -->
+        <div id="faq" class="faq-section bg-light text-dark">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="faq-title py-3">FAQ</h1>
+                </div>
+                <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                Question - 1
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Optio quo odit sapiente harum
+                                ab facilis laborum facere neque magni. Similique
+                                quod optio praesentium deleniti nihil nobis.
+                                Dolorum aut ratione molestiae.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                Question - 2
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Fugiat totam voluptates quae
+                                voluptate magni, recusandae eius commodi dolorem
+                                eaque iure cum error mollitia pariatur corrupti
+                                esse vero quo provident soluta.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                Question - 3
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ab distinctio aliquid est
+                                temporibus quae laborum porro ducimus officiis.
+                                Omnis, ut architecto eveniet consectetur aliquam
+                                vitae aut obcaecati. Officia, facere quibusdam!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of FAQ section -->
+
+        <!-- Footer section -->
+        <div class="footer-section bg-dark text-light">
+            <div class="container">
+                <p class="py-4">&copy; my-portfolio 2021</p>
+            </div>
+        </div>
+        <!-- End of footer section -->
+
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/index.js"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
          -->
-  </body>
+    </body>
 </html>
