@@ -1,107 +1,107 @@
 .home__container {
-    position: relative;
-    row-gap: 3rem;
-    padding-top: 6rem;
+  position: relative;
+  row-gap: 3rem;
+  padding-top: 3rem;
 }
 .home__data {
-    text-align: center;
+  text-align: center;
 }
 .home__greeting,
 .home__profession {
-    font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
 }
 .home__greeting {
-    display: block;
-    color: var(--title-color);
-    margin-bottom: 0.25rem;
+  display: block;
+  color: var(--title-color);
+  margin-bottom: 0.25rem;
 }
 .home__profession {
-    color: var(--text-color);
-    margin-bottom: 2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
 }
 .home__name {
-    font-size: var(--biggest-font-size);
+  font-size: var(--biggest-font-size);
 }
 
 .home__img {
-    width: 320px;
-    margin: 3rem auto 0;
+  width: 320px;
+  margin: 3rem auto 0;
 }
 .home__buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 .home__social,
 .home__scroll {
-    position: absolute;
+  position: absolute;
 }
 .home__social {
-    bottom: 4rem;
-    left: 0;
+  bottom: 4rem;
+  left: 0;
 }
 .home__social::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    margin-top: 5px;
-    background-color: var(--first-color);
-    transform: rotate(90deg) translate(16px, 0px);
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px, 0px);
 }
 .home__social__link {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    background-color: var(--container-color);
-    color: var(--first-color);
-    padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: 0.25rem;
 }
 .home__social__link > i {
-    font-size: 1.2rem;
-    transition: 0.4s;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  margin-top: 10px;
 }
 .home__social__link > i:hover {
-    background-color: var(--first-color);
-    color: #fff;
-    border-radius: 0.25rem;
+  background-color: var(--first-color);
+  color: #fff;
+  border-radius: 0.25rem;
 }
 
 .home__scroll {
-    color: var(--first-color);
-    right: -1rem;
-    bottom: 4rem;
-    display: grid;
-    row-gap: 3rem;
-    justify-items: center;
+  color: var(--first-color);
+  right: -1rem;
+  bottom: 4rem;
+  display: grid;
+  row-gap: 3rem;
+  justify-items: center;
 }
 .home__scroll__icon {
-    font-size: 1.35rem;
+  font-size: 1.35rem;
 }
 .home__scroll__name {
-    font-size: var(--smaller-font-size);
-    transform: rotate(-90deg);
-    letter-spacing: 2px;
+  font-size: var(--smaller-font-size);
+  transform: rotate(-90deg);
+  letter-spacing: 2px;
 }
 
 .button {
-    display: inline-block;
-    background-color: var(--first-color);
-    color: var(--body-color);
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    font-weight: var(--font-medium);
-    transition: 0.4s;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  transition: 0.4s;
 }
 .button:hover {
-    background-color: var(--first-color-alt);
-    color: var(--body-color);
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
 }
 .button__ghost {
-    background: transparent;
-    border: 2px solid var(--first-color);
-    color: var(--first-color);
+  background: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
 }
