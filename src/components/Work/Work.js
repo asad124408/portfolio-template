@@ -3,13 +3,13 @@ import Item from "./Item";
 import "./Work.css";
 
 const items = [
-    { id: 1, image: "assets/img/webDesign.jpg", title: "Web Design" },
+    { id: 1, image: "assets/img/webdesign.jpg", title: "Web Design" },
     { id: 2, image: "assets/img/appDev.jpg", title: "App Dev" },
     { id: 3, image: "assets/img/appDev.jpg", title: "App Dev" },
-    { id: 4, image: "assets/img/webDesign.jpg", title: "Web Design" },
+    { id: 4, image: "assets/img/webdesign.jpg", title: "Web Design" },
     { id: 5, image: "assets/img/webDev.jpg", title: "Web Dev" },
     { id: 6, image: "assets/img/webDev.jpg", title: "Web Dev" },
-    { id: 7, image: "assets/img/webDesign.jpg", title: "Web Design" },
+    { id: 7, image: "assets/img/webdesign.jpg", title: "Web Design" },
     { id: 8, image: "assets/img/webDev.jpg", title: "Web Dev" },
 ];
 
