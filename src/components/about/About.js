@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
     return (
-        <section className="about__section" id="about">
+        <section className="about__section section" id="about">
             <span className="section__subtitle">Introduction</span>
             <h2 className="section__title">About Me</h2>
 
@@ -34,19 +34,19 @@ function About() {
                             <span className="about__subtitle">Any Time</span>
                         </div>
                     </div>
-                </div>
 
-                <p className="about__description">
-                    I'm a professional Web Developer and Software Engineer over
-                    4 years of experience. I mostly work with React, Redux and
-                    Tailwind CSS. But also have a ton of experience in working
-                    with Firebase, Javascript, .Net Core, Bootstrap, HTML5/CSS3.
-                    For any kinds of information and questions, feel free to
-                    knock me.
-                </p>
-                <a className="about__button" href="#contact">
-                    Contact Me
-                </a>
+                    <p className="about__description">
+                        I'm a professional Web Developer and Software Engineer
+                        over 4 years of experience. I mostly work with React,
+                        Redux and Tailwind CSS. But also have a ton of
+                        experience in working with Firebase, Javascript, .Net
+                        Core, Bootstrap, HTML5/CSS3. For any kinds of
+                        information and questions, feel free to knock me.
+                    </p>
+                    <a className="about__button" href="#contact">
+                        Contact Me
+                    </a>
+                </div>
             </div>
         </section>
     );

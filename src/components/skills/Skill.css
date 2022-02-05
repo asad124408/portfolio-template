@@ -1,118 +1,118 @@
 .skills__section {
-  margin: 3.5rem 0;
+    margin: 3.5rem 0;
 }
 
 .skills__content {
-  display: flex;
-  margin: 2rem 0;
-  gap: 0.5rem;
+    display: flex;
+    margin: 2rem 0;
+    gap: 0.5rem;
 }
 .skills__title {
-  color: var(--first-color);
-  font-size: 1.2rem;
-  font-weight: var(--font-medium);
-  text-align: center;
+    color: var(--first-color);
+    font-size: 1.2rem;
+    font-weight: var(--font-medium);
+    text-align: center;
 }
 .skills__bar {
-  flex: 1;
-  border-radius: 0.75rem;
-  background-color: var(--container-color);
-  padding: 0.75rem 0.5rem;
+    flex: 1;
+    border-radius: 0.75rem;
+    background-color: var(--container-color);
+    padding: 1rem;
 }
 .skills__bar .bar {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 .skills__bar .bar .info span {
-  font-size: 1rem;
-  font-weight: var(--font-medium);
+    font-size: 1rem;
+    font-weight: var(--font-medium);
 }
 .skills__bar .bar .progress__line {
-  position: relative;
-  height: 0.75rem;
-  width: 100%;
-  background-color: #fff;
+    position: relative;
+    height: 0.75rem;
+    width: 100%;
+    background-color: #fff;
 }
 .skills__bar .bar .progress__line span {
-  position: absolute;
-  height: 100%;
-  background: hsla(var(--first-hue), var(--saturation), 56%, 1);
+    position: absolute;
+    height: 100%;
+    background: hsla(var(--first-hue), var(--saturation), 56%, 1);
 }
 .skills__bar .bar .progress__line span::before {
-  content: "";
-  position: absolute;
-  height: 0;
-  width: 0;
-  border: 0.5rem solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-color: var(--first-color);
-  right: 0;
-  top: -10px;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 0.5rem solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: var(--first-color);
+    right: 0;
+    top: -10px;
 }
 
 .progress__line.html span {
-  width: 100%;
+    width: 100%;
 }
 
 .progress__line.css span {
-  width: 100%;
+    width: 100%;
 }
 
 .progress__line.react span {
-  width: 90%;
+    width: 90%;
 }
 
 .progress__line.js span {
-  width: 85%;
+    width: 85%;
 }
 .progress__line.tailwind span {
-  width: 90%;
+    width: 90%;
 }
 
 .progress__line.core span {
-  width: 80%;
+    width: 80%;
 }
 .progress__line.mvc span {
-  width: 90%;
+    width: 90%;
 }
 .progress__line.node span {
-  width: 75%;
+    width: 75%;
 }
 .skills__bar .bar .progress__line span::after {
-  position: absolute;
-  right: 0;
-  color: var(--body-color);
-  background: var(--first-color);
-  top: -28px;
-  padding: 0.1rem 0.2rem;
-  font-size: 0.65rem;
-  font-weight: var(--font-medium);
+    position: absolute;
+    right: 0;
+    color: var(--body-color);
+    background: var(--first-color);
+    top: -28px;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.65rem;
+    font-weight: var(--font-medium);
 }
 .progress__line.html span::after {
-  content: "100%";
+    content: "100%";
 }
 
 .progress__line.css span::after {
-  content: "100%";
+    content: "100%";
 }
 
 .progress__line.react span::after {
-  content: "90%";
+    content: "90%";
 }
 
 .progress__line.js span::after {
-  content: "85%";
+    content: "85%";
 }
 .progress__line.tailwind span::after {
-  content: "90%";
+    content: "90%";
 }
 
 .progress__line.core span::after {
-  content: "80%";
+    content: "80%";
 }
 .progress__line.mvc span::after {
-  content: "90%";
+    content: "90%";
 }
 .progress__line.node span::after {
-  content: "75%";
+    content: "75%";
 }

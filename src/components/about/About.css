@@ -1,55 +1,55 @@
 .about__section {
-  margin: 3rem 0;
+    /* margin: 3rem 0; */
 }
 .about__container {
-  row-gap: 3rem;
+    row-gap: 3rem;
 }
 .about__img {
-  width: 220px;
-  border-radius: 1.5rem;
-  justify-self: center;
+    width: 220px;
+    border-radius: 1.5rem;
+    justify-self: center;
 }
 .about__data {
-  text-align: center;
+    text-align: center;
 }
 
 .about__info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 2rem;
 }
 .about__box {
-  background-color: var(--container-color);
-  border-radius: 0.75rem;
-  padding: 0.75rem 0.5rem;
+    background-color: var(--container-color);
+    border-radius: 0.75rem;
+    padding: 0.75rem 0.5rem;
 }
 .about__icon {
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
 }
 .about__title {
-  font-size: var(--small-font-size);
+    font-size: var(--small-font-size);
 }
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+    font-size: var(--tiny-font-size);
 }
 .about__description {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about__button {
-  background-color: var(--first-color);
-  color: var(--body-color);
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  font-weight: var(--font-medium);
-  transition: 0.4s;
-  width: fit-content;
-  justify-self: center;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+    transition: 0.4s;
+    width: fit-content;
+    justify-self: center;
 }
 .about__button:hover {
-  background-color: var(--first-color-alt);
-  color: var(--body-color);
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
 }
