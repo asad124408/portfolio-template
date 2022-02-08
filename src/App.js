@@ -12,47 +12,44 @@ import Work from "./components/Work/Work";
 import useLocalStorage from "use-local-storage";
 
 function App() {
-    const defaultDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-    ).matches;
-    const [theme, setTheme] = useLocalStorage(
-        "theme",
-        defaultDark ? "dark" : "light"
-    );
-    const switchTheme = () => {
-        const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useLocalStorage(
+    "theme",
+    defaultDark ? "dark" : "light"
+  );
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+  useEffect(() => {
+    const onScroll = (event) => {
+      const header = document.getElementById("header");
+      if (window.pageYOffset >= 50) header.classList.add("scroll__header");
+      else header.classList.remove("scroll__header");
     };
-    useEffect(() => {
-        const onScroll = (event) => {
-            const header = document.getElementById("header");
-            if (window.pageYOffset >= 50)
-                header.classList.add("scroll__header");
-            else header.classList.remove("scroll__header");
-        };
 
-        window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll);
 
-        return () => {
-            window.removeEventListener("scroll", onScroll);
-        };
-    }, []);
-    return (
-        <div data-theme={theme}>
-            <div className="portfolio__app">
-                <Header theme={theme} switchTheme={switchTheme} />
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+  return (
+    <div data-theme={theme}>
+      <div className="portfolio__app">
+        <Header theme={theme} switchTheme={switchTheme} />
 
-                <Home />
-                <About />
-                <Skill />
-                <Service />
-                <Work />
-                <Testimonial />
-                <Contact />
-                <Footer />
-            </div>
-        </div>
-    );
+        <Home />
+        <About />
+        <Skill />
+        <Service />
+        <Work />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
+  );
 }
 
 export default App;
