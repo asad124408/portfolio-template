@@ -3,8 +3,8 @@
 }
 .footer__container {
   padding: 2rem 0 6rem;
-  background-color: var(--body-color);
-  position: relative;
+  /* background-color: var(--body-color);
+  position: relative; */
 }
 .footer__title,
 .footer__link {
