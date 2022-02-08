@@ -13,6 +13,7 @@
     "react-mixitup": "^2.3.0",
     "react-scripts": "5.0.0",
     "react-scrollspy": "^3.4.3",
+    "react-tsparticles": "^1.40.2",
     "swiper": "^8.0.3",
     "use-local-storage": "^2.2.6",
     "web-vitals": "^2.1.4"
